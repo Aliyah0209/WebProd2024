@@ -1,0 +1,56 @@
+.splide__slide img {
+  width: 100%;
+  height: auto;
+
+}
+ul{
+  list-style-type:none;
+}
+.container{
+  width:50%;
+  animation: popUp 2s ease-in-out;
+ 
+}
+.img img{
+    width: 20%;
+  height: auto;
+
+}
+ .splide__slide img {
+      animation: slideIn 1s ease forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+     .splide__slide img {
+  animation:  popUp 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
